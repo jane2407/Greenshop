@@ -134,7 +134,6 @@ input{
 }
 
 header{
-    padding-top: 30px;
     margin-bottom: 12px;
     display: flex;
     justify-content: space-between;
@@ -260,19 +259,40 @@ p{
     padding: 11px 0 9px;
     font-family: 'cera_probold';
 }
-.categories .container_3{
+
+.categories .container_categories{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
+    margin: auto;
 }
+
+
 .categories .left_sidebar{
     max-width: 310px;
+    min-height: 774px;
 }
-.categories .right_content{
+
+.categories .right_content {
     max-width: 840px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.categories .container_categories .left_sidebar nav ul{
+    list-style: none;
 }
 
+.right_content .flex_right nav ul  {
+    list-style: none;
+     display: inline-block;
+}
 
-
-
+.categories .right_content article {
+    width: 258px;
+    display: flex;
+    justify-content: space-between;
+}
