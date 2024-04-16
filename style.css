@@ -208,7 +208,7 @@ header nav li:hover:after{
     max-width: 1200px;
     margin: auto;
     }
-article{
+.welcome{
     margin-left:43px;
 }
 .banner article{
@@ -272,27 +272,49 @@ p{
 .categories .left_sidebar{
     max-width: 310px;
     min-height: 774px;
+
+}
+.categories .left_sidebar nav{
+    margin-bottom: 377px;
+
 }
 
 .categories .right_content {
     max-width: 840px;
-    margin: auto;
+
+}
+.flex_right{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+justify-content: space-between;
+    list-style: none;
 
 }
 .categories .container_categories .left_sidebar nav ul{
     list-style: none;
+    font-family: 'cera_proregular';
 }
-
-.right_content .flex_right nav ul  {
+h3{
+    font-family: 'cera_probold';
+    margin-bottom: 7px;
+}
+.right_content .flex_right nav ul li  {
     list-style: none;
      display: inline-block;
+    font-family: 'cera_proregular';
 }
 
 .categories .right_content article {
     width: 258px;
+
+}
+.flex_right_plants{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'cera_proregular';
+}
+
+.categories .right_content article span {
+    width: 258px;
+    font-family: 'cera_probold';
 }
