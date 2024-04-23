@@ -315,6 +315,44 @@ h3{
 }
 .categories .right_content article {
     width: 258px;
+    border-top: solid 1px transparent;
+    position: relative;
+
+}
+.categories .right_content article ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 67px;
+    left: 73px;
+    width: 125px;
+    opacity: 0;
+    transition: 0.4s;
+    color: #3d3d3d;
+    justify-content: space-between;
+}
+.categories .right_content article ul li:hover {
+    background-color:#46A358 ;
+}
+
+.categories .right_content article:hover ul {
+    opacity: 1;
+}
+.categories .right_content article .sale{
+    position: absolute;
+    left:0;
+    top:10px;
+    background-color: #46A358;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    width: 70px;
+    height: 15px;
+    }
+.categories .right_content article:hover {
+    border-top: solid 1px #46A358;
 
 }
 .flex_right_plants{
@@ -322,13 +360,35 @@ h3{
     justify-content: space-between;
     flex-wrap: wrap;
     font-family: 'cera_proregular';
+    font-size: 18px;
 }
 
 .categories .right_content article span {
     width: 258px;
     font-family: 'cera_probold';
+    color: #46A358;
+    margin-right: 15px;
 
 }
+.categories .right_content article h5 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    position: relative;
+    display: inline-block;
+
+}
+.categories .right_content article h5:before {
+    content:"";
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #a5a5a5;
+    width: 100%;
+    bottom: 7px;
+}
+
 .flex_right_plants article p{
     margin-bottom: 6px;
 }
@@ -352,15 +412,17 @@ h3{
     color: #46A358;
 }
 
-.page_strip {
+.page_strip ul {
      display: flex;
     justify-content: end;
     max-width: 1200px;
     align-items: center;
      margin: auto;
+    list-style: none;
+    flex-direction: row;
 }
 
-.page_index {
+.page_strip a {
     border: 1px solid #e5e5e5;
     border-radius: 4px;
     justify-content: center;
@@ -371,10 +433,26 @@ h3{
     width: 35px;
     height: 35px;
     align-items: center;
+    text-decoration:none;
     max-width: 1200px;
- 
 }
-.page_index:hover {
+.categories .page_strip ul li:last-of-type a svg path {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("https://github.com/jane2407/Greenshop/blob/main/img/arrow.svg");
+    stroke: white !important;
+    color:  #3d3d3d;
+    opacity: 1;
+
+}
+.categories .page_strip ul li:hover{
     background-color: #46A358;
+
+}
+.categories .page_strip ul li:hover a{
+    color: white;
+
 }
 
