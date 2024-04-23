@@ -142,10 +142,47 @@ header nav, header nav li, header.logo {
     display: inline-block;
 
 }
+header nav ul li.drop{
+    position: relative;
+}
 header ul{
     list-style: none;
     display: flex;
     margin-top: 50px;
+}
+header nav ul .dropdown{
+    display: block;
+    position: absolute;
+    background-color: #EDF6EE;
+    top: 10px;
+    height: 0;
+    opacity: 0;
+}
+header nav ul .dropdown_2{
+    display: block;
+    position: absolute;
+    background-color: #EDF6EE;
+    top: 10px;
+    height: 0;
+    opacity: 0;
+}
+header nav ul li.drop:hover .dropdown_2{
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
+
+}
+header nav ul li.drop_2{
+    position: relative;
+}
+header nav ul li.drop:hover .dropdown{
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
+
+}
+header nav ul .dropdown li{
+    display: block;
 }
 header nav li a{
     text-decoration: none;
@@ -303,41 +340,42 @@ h3{
     margin-bottom: 7px;
 }
 
-.right_content .flex_right .list_2 li {
-    list-style: none;
-     display: inline-block;
-    font-family: 'cera_proregular';
-}
-.list_2 li{
-    min-width: 112px;
-    text-align: center;
-    font-family: 'cera_proregular';
-}
+
+
 .categories .right_content article {
     width: 258px;
     border-top: solid 1px transparent;
     position: relative;
 
+
 }
-.categories .right_content article ul {
+.categories .right_content article ul{
     list-style: none;
     display: flex;
     position: absolute;
     bottom: 67px;
     left: 73px;
     width: 125px;
-    opacity: 0;
     transition: 0.4s;
+    opacity: 0;
     color: #3d3d3d;
     justify-content: space-between;
+    background-color:white;
 }
-.categories .right_content article ul li:hover {
-    background-color:#46A358 ;
-}
-
 .categories .right_content article:hover ul {
     opacity: 1;
 }
+.categories .right_content article ul li:hover a svg path{
+   fill: green!important;
+}
+
+.categories .right_content article ul li:hover a {
+    color: white;
+}
+.categories .right_content article ul li:hover a {
+    background-color: white;
+}
+
 .categories .right_content article .sale{
     position: absolute;
     left:0;
@@ -348,8 +386,7 @@ h3{
     font-size: 16px;
     line-height: 100%;
     color: #fff;
-    width: 70px;
-    height: 15px;
+    width: auto;
     }
 .categories .right_content article:hover {
     border-top: solid 1px #46A358;
@@ -399,17 +436,30 @@ h3{
     transition: 0.5s;
     text-decoration: none;
     font-family: 'cera_proregular';
+
 }
 .categories .list li a:hover{
     color: #46A358;
 }
-.right_content .flex_right .list_2 li{
-    color:  #3d3d3d;
+.right_content .flex_right .list_2 li {
+
     font-size: 15px;
     transition: 0.5s;
+
+    display:inline-block;
+    font-family: 'cera_proregular';
+
+    margin-right: 37px;
+
 }
-.right_content .flex_right .list_2 li:hover{
+.right_content .flex_right .list_2 li a {
+    list-style: none;
+    text-decoration: none;
+    color:  #3d3d3d;
+}
+.right_content .flex_right .list_2 li a:hover{
     color: #46A358;
+    border-bottom: solid 1px #46A358;
 }
 
 .page_strip ul {
@@ -420,6 +470,10 @@ h3{
      margin: auto;
     list-style: none;
     flex-direction: row;
+
+}
+.page_strip ul li{
+    margin-right: 10px;
 }
 
 .page_strip a {
@@ -436,22 +490,16 @@ h3{
     text-decoration:none;
     max-width: 1200px;
 }
-.categories .page_strip ul li:last-of-type a svg path {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-image: url("https://github.com/jane2407/Greenshop/blob/main/img/arrow.svg");
-    stroke: white !important;
-    color:  #3d3d3d;
-    opacity: 1;
 
+.page_strip ul li:last-of-type:hover a svg path {
+    stroke:white !important;
 }
-.categories .page_strip ul li:hover{
+
+ .page_strip ul li:hover{
     background-color: #46A358;
 
 }
-.categories .page_strip ul li:hover a{
+ .page_strip ul li:hover a{
     color: white;
 
 }
