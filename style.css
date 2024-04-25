@@ -204,7 +204,7 @@ header nav ul .dropdown_2 li:last-of-type:after{
     transition: 0.5s;
 }
 
-.dropdown li, .dropdown_2 li:hover a{
+.dropdown li:hover a, .dropdown_2 li:hover a{
     color:white !important;
 }
 .dropdown li, .dropdown_2 li:hover a{
@@ -544,3 +544,36 @@ h3{
 
 }
 
+.plants{
+    padding-top: 94px;
+}
+.categories_plants{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    /*background-color: red;*/
+}
+.button_find{
+    border-radius: 6px;
+    width: 140px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    box-sizing:border-box;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #46a358;
+    padding: 11px 0 9px;
+    font-family: 'cera_proregular';
+}
+
+.left_plant{
+    display: block;
+    justify-content:end;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
