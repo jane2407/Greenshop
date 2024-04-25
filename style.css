@@ -204,18 +204,19 @@ header nav ul .dropdown_2 li:last-of-type:after{
     transition: 0.5s;
 }
 
-.dropdown li:hover a, .dropdown_2 li:hover a{
+.dropdown li:hover a, .drop_2 .dropdown_2 li:hover a{
     color:white !important;
 }
-.dropdown li, .dropdown_2 li:hover a{
+
+ .dropdown li , .drop_2 .dropdown_2 li {
     color: #3d3d3d;
 }
 
-.dropdown_2:hover{
+.dropdown_2:hover {
     background-color: #EDF6EE;
 }
 .dropdown_2 ul li :hover a {
-     background-color: green;
+     background-color: #46A358;
 }
 
 header nav li a{
@@ -225,7 +226,7 @@ header nav li a{
 header .logo{
     margin-right: 229px;
     text-decoration: none;
-    vertical-align: middle;
+    Best in hanging baskets. Prefers medium to high light.    vertical-align: middle;
 
 }
 header .login{
@@ -552,7 +553,7 @@ h3{
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    /*background-color: red;*/
+
 }
 .button_find{
     border-radius: 6px;
@@ -570,10 +571,32 @@ h3{
     font-family: 'cera_proregular';
 }
 
-.left_plant{
-    display: block;
-    justify-content:end;
-    flex-wrap: wrap;
+.text_left_1 .text_left_2{
+        display: flex;
+        justify-content: space-between;
+}
+.blog_posts{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'cera_probold';
+    line-height: 53%;
+    color: #3d3d3d;
+    margin-bottom:15px ;
+    margin-top: 138px;
+}
+.blog_posts_2{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'cera_proregular';
+    line-height: 171%;
+    color: #727272;
+}
+.blog_posts_plant{
+    display: flex;
     max-width: 1200px;
     margin: auto;
+    margin-top: 35px;
+
 }
