@@ -486,15 +486,11 @@ h3{
     color: #46A358;
 }
 .right_content .flex_right .list_2 li {
-
     font-size: 15px;
     transition: 0.5s;
-
     display:inline-block;
     font-family: 'cera_proregular';
-
     margin-right: 37px;
-
 }
 .right_content .flex_right .list_2 li a {
     list-style: none;
