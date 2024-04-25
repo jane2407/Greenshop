@@ -138,11 +138,11 @@ header{
     display: flex;
     justify-content: space-between;
 }
-header nav, header nav li, header.logo {
+header nav, header.logo {
     display: inline-block;
 
 }
-header nav ul li.drop{
+header nav ul li.drop, header nav ul li.drop_2{
     position: relative;
 }
 header ul{
@@ -150,40 +150,74 @@ header ul{
     display: flex;
     margin-top: 50px;
 }
-header nav ul .dropdown{
+ .dropdown {
     display: block;
     position: absolute;
     background-color: #EDF6EE;
     top: 10px;
     height: 0;
     opacity: 0;
+     font-family: 'cera_proregular';
+     font-size: 16px;
+     color: #3d3d3d;
+     width: 188px;
 }
-header nav ul .dropdown_2{
+.dropdown_2{
     display: block;
     position: absolute;
-    background-color: #EDF6EE;
-    top: 10px;
-    height: 0;
+    background-color:#EDF6EE;
+    top: -50px;
+    left: 180px;
+    height: 80px;
     opacity: 0;
+    font-family: 'cera_proregular';
+    font-size: 16px;
+    color: #3d3d3d;
+    width: 178px;
 }
-header nav ul li.drop:hover .dropdown_2{
+header nav ul .dropdown li:last-of-type:after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./img/right_bottom.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    transition: 1s;
+}
+header nav ul .dropdown li:last-of-type:hover:after{
+    transform: rotate(180deg);
+}
+header nav ul .dropdown_2 li:last-of-type:after{
+    display: none;
+}
+.drop_2:hover .dropdown_2{
+    opacity: 1;
+    height: auto;
+    transition: 0.3s;
+}
+.drop:hover .dropdown{
     opacity: 1;
     height: auto;
     transition: 0.5s;
+}
 
+.dropdown li, .dropdown_2 li:hover a{
+    color:white !important;
 }
-header nav ul li.drop_2{
-    position: relative;
+.dropdown li, .dropdown_2 li:hover a{
+    color: #3d3d3d;
 }
-header nav ul li.drop:hover .dropdown{
-    opacity: 1;
-    height: auto;
-    transition: 0.5s;
 
+.dropdown_2:hover{
+    background-color: #EDF6EE;
 }
-header nav ul .dropdown li{
-    display: block;
+.dropdown_2 ul li :hover a {
+     background-color: green;
 }
+
 header nav li a{
     text-decoration: none;
     font-family: cera_proregular;
@@ -219,6 +253,16 @@ header nav li:after{
     margin-top: 22px;
     transition: 0.3s;
     }
+header nav li ul li:after{
+    margin-top: 9px;
+}
+header nav li ul :hover {
+    background-color:green;
+}
+header nav li ul li{
+    margin-right: 0;
+}
+
 header nav li:hover:after{
     background-color: #46A358;
 }
