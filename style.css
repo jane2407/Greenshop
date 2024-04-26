@@ -138,7 +138,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-header nav, header.logo {
+header nav, header .logo {
     display: inline-block;
 
 }
@@ -161,6 +161,7 @@ header ul{
      font-size: 16px;
      color: #3d3d3d;
      width: 188px;
+     bottom:10px;
 }
 .dropdown_2{
     display: block;
@@ -183,8 +184,8 @@ header nav ul .dropdown li:last-of-type:after{
     background-image: url("./img/right_bottom.svg");
     background-repeat: no-repeat;
     position: absolute;
-    right: 5px;
-    top: -5px;
+    right: 20px;
+    top: -1px;
     transition: 1s;
 }
 header nav ul .dropdown li:last-of-type:hover:after{
@@ -205,11 +206,23 @@ header nav ul .dropdown_2 li:last-of-type:after{
 }
 
 .dropdown li:hover a, .drop_2 .dropdown_2 li:hover a{
-    color:white !important;
+    color:white;
 }
 
- .dropdown li , .drop_2 .dropdown_2 li {
+ .dropdown li a, .drop_2 .dropdown_2 li a {
     color: #3d3d3d;
+
+
+}
+ .dropdown li:hover:after, .drop_2 .dropdown_2 li:hover:after{
+     display: none;
+ }
+.dropdown li:after, .drop_2 .dropdown_2 li:after{
+    display: none;
+}
+
+.dropdown li:hover:after{
+    background-color: transparent;
 }
 
 .dropdown_2:hover {
@@ -226,7 +239,7 @@ header nav li a{
 header .logo{
     margin-right: 229px;
     text-decoration: none;
-    Best in hanging baskets. Prefers medium to high light.    vertical-align: middle;
+    vertical-align: middle;
 
 }
 header .login{
@@ -262,6 +275,7 @@ header nav li ul :hover {
 }
 header nav li ul li{
     margin-right: 0;
+    margin-bottom: 5px;
 }
 
 header nav li:hover:after{
@@ -508,9 +522,10 @@ h3{
     justify-content: end;
     max-width: 1200px;
     align-items: center;
-     margin: auto;
+    margin-left: 970px;
     list-style: none;
     flex-direction: row;
+    margin-top: 90px;
 
 }
 .page_strip ul li{
