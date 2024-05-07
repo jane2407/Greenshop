@@ -162,6 +162,7 @@ header ul{
      color: #3d3d3d;
      width: 188px;
      bottom:10px;
+     /*display: none;*/
 }
 .dropdown_2{
     display: block;
@@ -185,12 +186,16 @@ header nav ul .dropdown li:last-of-type:after{
     background-repeat: no-repeat;
     position: absolute;
     right: 20px;
-    top: -1px;
+    top: -4px;
     transition: 1s;
 }
 header nav ul .dropdown li:last-of-type:hover:after{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
+
+
+
+
 header nav ul .dropdown_2 li:last-of-type:after{
     display: none;
 }
@@ -203,6 +208,7 @@ header nav ul .dropdown_2 li:last-of-type:after{
     opacity: 1;
     height: auto;
     transition: 0.5s;
+    /*display: block;*/
 }
 
 .dropdown li:hover a, .drop_2 .dropdown_2 li:hover a{
@@ -382,7 +388,6 @@ p{
 
 .categories .right_content {
     max-width: 840px;
-
 }
 .flex_right{
     display: flex;
@@ -398,8 +403,6 @@ h3{
     font-family: 'cera_probold';
     margin-bottom: 7px;
 }
-
-
 
 .categories .right_content article {
     width: 258px;
@@ -560,8 +563,85 @@ h3{
 
 }
 
+.page_strip ul li:last-of-type{
+    display: inline-block;
+    position: relative;
+    animation: slideright 1s infinite;
+}
+@keyframes slideright {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 50px;
+        box-shadow:#46A358 0 7px 29px 0 ;
+    }
+}
+
+
 .plants{
     padding-top: 94px;
+    padding-bottom: 30px;
+}
+.left_plant{
+    position: relative;
+    width: 586px;
+    height: 302px;
+
+}
+.text_left_1{
+    position: absolute;
+    top: 89px;
+    bottom: 9px;
+    left: 300px;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+    font-family: 'cera_problack';
+
+}
+.text_left_2{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+    font-family: 'cera_proregular';
+
+}
+.right_plant{
+    position: relative;
+    width: 586px;
+    height: 302px;
+}
+.text_right_1{
+    position: absolute;
+    top: 89px;
+    left: 430px;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+    font-family: 'cera_problack';
+
+}
+.text_right_2{
+    position: absolute;
+    top: 150px;
+    left: 270px;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+    font-family: 'cera_proregular';
+
 }
 .categories_plants{
     display: flex;
@@ -572,18 +652,20 @@ h3{
 }
 .button_find{
     border-radius: 6px;
-    width: 140px;
-    height: 40px;
+    width:auto;
     font-weight: 700;
     font-size: 14px;
     color: #fff;
     text-align: center;
     box-sizing:border-box;
-    display: inline-block;
+    display: inline-flex;
+    padding: 11px 47px 9px 28px;
     text-decoration: none;
     background-color: #46a358;
-    padding: 11px 0 9px;
-    font-family: 'cera_proregular';
+    font-family: 'cera_promedium';
+    position: absolute;
+    bottom: 50px;
+    right: 0;
 }
 
 .text_left_1 .text_left_2{
@@ -598,7 +680,7 @@ h3{
     line-height: 53%;
     color: #3d3d3d;
     margin-bottom:15px ;
-    margin-top: 138px;
+    padding-top: 138px;
 }
 .blog_posts_2{
     display: flex;
@@ -612,6 +694,60 @@ h3{
     display: flex;
     max-width: 1200px;
     margin: auto;
-    margin-top: 35px;
+    padding-top: 35px;
+    justify-content: space-between;
+}
+.blog_posts_plant article{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 268px;
+    flex-direction: column;
+}
+.date, .title_plant, .short_title, .read_more{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.date{
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+    font-family: 'cera_promedium';
+    padding-top: 9px;
+}
+.title_plant{
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    font-family: 'cera_probold';
+    padding-top: 4px;
 
 }
+.short_title{
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    font-family: 'cera_proregular';
+    padding-top: 4px;
+}
+.read_more{
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    text-decoration:none;
+    font-family: 'cera_promedium';
+    display: inline-block;
+    padding-top: 9px;
+    /*background-image: url("../img/arrow_black.svg");*/
+    background-repeat: no-repeat;
+    
+}
+.read_more:hover{
+    color:#46A358 ;
+}
+
+.read_more:hover a{
+    color: white;
+}
+
