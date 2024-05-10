@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1200px){
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+@media only screen and (max-width: 840px){
+    .header nav li{
+        margin-right: 15px;
+    }
+    .header nav{
+        position: inherit;
+        right: inherit;
+    }
+    .container_banner{
+        display: block;
+    }
+}
+@media only screen and (max-width: 767px){
+
+}
