@@ -5,7 +5,7 @@
 }
 }
 @media only screen and (max-width: 840px){
-    .header nav li{
+    .container nav li{
         margin-right: 15px;
     }
     .header nav{
@@ -17,5 +17,14 @@
     }
 }
 @media only screen and (max-width: 767px){
-
+.header nav{
+    display: none;
+}
+    .welcome h1{
+        font-size: 40px;
+    }
+    .container_banner img{
+        width: 100%;
+        display: block;
+    }
 }
