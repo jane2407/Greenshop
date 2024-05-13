@@ -58,6 +58,14 @@ p{
     background-color: #46a358;
     padding: 11px 0 9px;
     font-family: 'cera_probold';
+animation: example 4s infinite;
+}
+
+@keyframes example {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    70% {transform: rotate(30deg)}
+    100% {transform: skew(20deg, 10deg)}
 }
 
 .categories .container_categories{
@@ -79,7 +87,9 @@ p{
     list-style: none;
     line-height: 267%;
     margin-bottom: 250px;
+    display: block;
 }
+
 .categories .left_sidebar nav{
     margin-bottom: 377px;
 }
@@ -548,6 +558,7 @@ h3{
 }
 .type_1 ul li, .type_2 ul li, .type_3 ul li{
    list-style: none;
+    display: block;
 }
 .type_1, .type_2, .type_3{
     font-weight: 400;
@@ -557,6 +568,7 @@ h3{
     font-family: 'cera_proregular';
 
 }
+
 .type_1 li:first-child,.type_2 li:first-child, .type_3 li:first-child{
     font-weight: 700;
     font-size: 18px;

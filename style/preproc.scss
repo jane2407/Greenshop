@@ -192,7 +192,7 @@ header nav ul li.drop, header nav ul li.drop_2{
   background-color: #EDF6EE;
   top: 10px;
   height: 0;
-  opacity: 0;
+  //opacity: 0;
   font-family: 'cera_proregular';
   font-size: 16px;
   color: #3d3d3d;
@@ -200,6 +200,7 @@ header nav ul li.drop, header nav ul li.drop_2{
   bottom:10px;
 
 }
+
 .dropdown_2{
   display: block;
   position: absolute;
@@ -260,7 +261,9 @@ header nav ul .dropdown_2 li:last-of-type:after{
 
 .dropdown li a, .drop_2 .dropdown_2 li a {
   color: #3d3d3d;
-
+}
+.drop_2 a svg path{
+  padding-right: 20px;
 
 }
 .dropdown li:hover:after, .drop_2 .dropdown_2 li:hover:after{
