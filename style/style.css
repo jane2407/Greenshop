@@ -305,10 +305,6 @@ h3{
     display: flex;
 }
 .text_left_1{
-    /*position: absolute;*/
-    /*top: 89px;*/
-    /*bottom: 9px;*/
-    /*left: 300px;*/
     font-size: 18px;
     line-height: 133%;
     text-transform: uppercase;
@@ -317,14 +313,8 @@ h3{
 
 }
 .text_left_2{
-    /*position: absolute;*/
-    /*top: 150px;*/
-    /*left: 300px;*/
-    /*display: flex;*/
-    /*justify-content: flex-end;*/
     font-size: 14px;
     line-height: 171%;
-    /*text-align: right;*/
     color: #727272;
     font-family: 'cera_proregular';
 
@@ -336,24 +326,17 @@ h3{
 }
 
 .text_right_1{
-    /*position: absolute;*/
-    /*top: 89px;*/
-    /*left: 430px;*/
+
     font-size: 18px;
     line-height: 133%;
     text-transform: uppercase;
-    /*text-align: right;*/
     color: #3d3d3d;
     font-family: 'cera_problack';
 
 }
 .text_right_2{
-    /*position: absolute;*/
-    /*top: 150px;*/
-    /*left: 270px;*/
     font-size: 14px;
     line-height: 171%;
-    /*text-align: right;*/
     color: #727272;
     font-family: 'cera_proregular';
 
@@ -380,11 +363,11 @@ h3{
     margin-top: 25px;
     font-family: 'cera_promedium';
     margin-left: 2px;
-    /*position: absolute;*/
-    /*bottom: 50px;*/
-    /*right: 0;*/
 }
-
+.button_find img{
+    display: flex;
+    align-items: center;
+}
 
 .text_left_1 .text_left_2{
         display: flex;
@@ -455,7 +438,8 @@ h3{
     color: black;
     text-decoration:none;
     font-family: 'cera_promedium';
-
+    display: inline-block;
+    padding-top: 9px;
 }
 
 .read_more:hover{
@@ -496,6 +480,7 @@ h3{
     line-height: 89%;
     color: #3d3d3d;
     font-family: 'cera_probold';
+    padding-left: 10px;
 }
 .join_letter p{
     font-weight: 400;
@@ -515,7 +500,6 @@ h3{
     box-sizing:border-box;
     text-decoration: none;
     background-color: #46a358;
-    margin-top: 25px;
     font-family: 'cera_promedium';
     margin-left: -14px;
     border: 1px solid #3d3d3d;
@@ -526,11 +510,13 @@ h3{
 
 }
 .button_join, .email{
-    display: inline-block;
+    display: inline-flex;
     padding: 9px 10px;
     border: 0;
     font: inherit;
     box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 15px;
 }
 .gradient_menu{
     display: flex;
@@ -556,6 +542,9 @@ h3{
     padding-top: 33px;
     padding-bottom: 29px;
 }
+footer .account ul{
+    display: block;
+}
 .type_1 ul li, .type_2 ul li, .type_3 ul li{
    list-style: none;
     display: block;
@@ -575,6 +564,7 @@ h3{
     line-height: 89%;
     color: #3d3d3d;
     font-family: 'cera_probold';
+    padding-bottom: 10px;
 }
 .social_media span{
   display: block;
@@ -584,6 +574,7 @@ h3{
     color: #3d3d3d;
     font-family: 'cera_probold';
     padding-bottom: 13px;
+    padding-top: 45px;
 }
 .social_media a img {
     padding-top: 20px;
