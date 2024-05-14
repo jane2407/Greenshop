@@ -145,25 +145,16 @@ a{
   border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
 }
 
-header nav li ul li:after{
-  margin-top: 9px;
-}
-header nav li ul :hover {
-  background-color:green;
-}
-
 
 header{
   margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
-}
 .logo{
   margin-right: 229px;
   text-decoration: none;
   vertical-align: middle;
   display: inline-block;
-}
 .login{
   margin-left: 364px;
   padding: 8px 17px 7px 17px;
@@ -177,23 +168,19 @@ header{
   box-sizing:border-box;
   display: inline-flex;
   font-family: 'cera_promedium';
-}
  ul{
   list-style: none;
   display: flex;
   margin-top: 50px;
-}
   nav{
     display: inline-block;
-  }
-  li{
-    margin-right: 50px;
   }
   li ul li{
   margin-right: 0;
   margin-bottom: 5px;
-  }
-
+   &:after{
+     margin-top: 9px;
+   }
     a{
     font-weight: 400;
     font-size: 16px;
@@ -202,10 +189,12 @@ header{
     font-family: cera_proregular;
   }
   li{
+    margin-right: 50px;
+  }
     &:last-of-type{
       margin-right: 0;
     }
-    &:after{
+        &:after{
       height: 3px;
       background-color:transparent;
       width: 100%;
@@ -220,9 +209,7 @@ header{
 }
 
 
-header nav ul li.drop, header nav ul li.drop_2{
-  position: relative;
-}
+
 
 .dropdown {
   display: block;
@@ -258,7 +245,11 @@ li {
     display: none;
     background-color: transparent;
   }
+  &:hover a{
+    color:white;
+  }
 }
+
 
 .dropdown_2{
   display: block;
@@ -272,7 +263,6 @@ li {
   font-size: 16px;
   color: #3d3d3d;
   width: 178px;
-}
 li {
   &:after{
     display: none;
@@ -283,60 +273,55 @@ li {
   &:hover:after{
     display: none;
   }
-
-}
-
-
-
-.dropdown_2:hover {
-  background-color: #EDF6EE;
-}
-.dropdown_2 ul li :hover a {
-  background-color: #7fff97;
-}
-.dropdown_2 li{
-  padding-left: 20px ;
-}
-
-
-
-
-
-.drop_2:hover .dropdown_2{
-  opacity: 1;
-  height: auto;
-  transition: 0.3s;
-}
-.drop:hover .dropdown{
-  opacity: 1;
-  height: auto;
-  transition: 0.5s;
-}
-
-
-.dropdown li:hover a, .drop_2 .dropdown_2 li:hover a{
-  color:white;
-}
-
-.dropdown li a, .drop_2 .dropdown_2 li a {
-  color: #3d3d3d;
-}
-.drop_2 {
-  a {
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  &:hover a{
+    color:white;
   }
-  &:hover svg {
-    animation: priming 1s infinite;
+  &:hover {
+    background-color: #EDF6EE;
   }
 }
 
-@keyframes priming {
-  0% {transform: rotate(90deg)}
-  100% {transform: rotate(360deg)}
+
+
+.drop {
+  position: relative;
 }
+  &:hover .dropdown{
+    opacity: 1;
+    height: auto;
+    transition: 0.5s;
+  }
+
+
+
+  .drop_2 {
+    position: relative;}
+    a {
+      padding-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &:hover svg {
+      animation: priming 1s infinite;
+    }
+    &:hover .dropdown_2{
+      opacity: 1;
+      height: auto;
+      transition: 0.3s;
+    }
+  }
+
+  @keyframes priming {
+    0% {
+      transform: rotate(90deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+
+
 
 
 

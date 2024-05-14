@@ -278,36 +278,34 @@ li:hover:after {
   padding-left: 20px;
 }
 
-.drop_2:hover .dropdown_2 {
-  opacity: 1;
-  height: auto;
-  transition: 0.3s;
+.drop {
+  position: relative;
 }
-
 .drop:hover .dropdown {
   opacity: 1;
   height: auto;
   transition: 0.5s;
 }
-
-.dropdown li:hover a, .drop_2 .dropdown_2 li:hover a {
+.drop .dropdown li:hover a, .drop .drop_2 .dropdown_2 li:hover a {
   color: white;
 }
-
-.dropdown li a, .drop_2 .dropdown_2 li a {
+.drop .dropdown li a, .drop .drop_2 .dropdown_2 li a {
   color: #3d3d3d;
 }
-
-.drop_2 a {
+.drop .drop_2 a {
   padding-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.drop_2:hover svg {
+.drop .drop_2:hover svg {
   animation: priming 1s infinite;
 }
-
+.drop .drop_2:hover .dropdown_2 {
+  opacity: 1;
+  height: auto;
+  transition: 0.3s;
+}
 @keyframes priming {
   0% {
     transform: rotate(90deg);

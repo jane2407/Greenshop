@@ -534,6 +534,14 @@ h3{
     align-items: center;
     padding: 0 22px 0 23px;
 }
+.gradient_menu .logo{
+    margin-right: 0;
+}
+/*.gradient_menu span img{*/
+/*    max-width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 .account {
     display: flex;
     justify-content: space-between;
@@ -583,4 +591,22 @@ footer .account ul{
 }
 .social_media a{
     text-decoration: none;
+}
+.owl-dots{
+    text-align: center;
+    .owl-dot{
+        &.active{
+            span{
+                background-color: #46A358;
+            }
+        }
+        span{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 10px;
+            background-color: #3d3d3d;
+        }
+    }
 }
