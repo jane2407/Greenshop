@@ -175,9 +175,12 @@ header{
   nav{
     display: inline-block;
   }
-  li ul li{
-  margin-right: 0;
-  margin-bottom: 5px;
+  li{
+    ul{
+      li{
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
    &:after{
      margin-top: 9px;
    }
@@ -203,7 +206,8 @@ header{
       margin-top: 22px;
       transition: 0.3s;
     }
-    &:hover:after{
+    &:hover{
+    &:after{
       background-color: #46A358;
     }
 }
@@ -225,10 +229,12 @@ header{
   bottom:10px;
 }
 li {
-  &li:after{
+  &li{
+  &:after{
     display: none;
   }
-  &:last-of-type:after {
+  &:last-of-type{
+   &:after {
     content: "";
     display: inline-block;
     width: 20px;
@@ -238,10 +244,12 @@ li {
     top: -4px;
     transition: 1s;
   }
-  &:last-of-type:hover svg path{
+  &:last-of-type{
+     &:hover svg path{
     fill: white;
   }
-  &:hover:after{
+  &:hover{
+    &:after{
     display: none;
     background-color: transparent;
   }
@@ -267,10 +275,12 @@ li {
   &:after{
     display: none;
   }
-  &:last-of-type:after{
+  &:last-of-type{
+  &:after{
     display: none;
 }
-  &:hover:after{
+  &:hover{
+   &:after{
     display: none;
   }
   &:hover a{
