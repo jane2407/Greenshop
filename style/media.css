@@ -5,9 +5,7 @@
 }
 }
 @media only screen and (max-width: 840px){
-    .container nav li{
-        /*margin-right: 15px;*/
-    }
+
     .header nav{
         position: inherit;
         right: inherit;

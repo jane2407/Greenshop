@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="icon" href="img/Logo.svg">
     <!--    <link rel="stylesheet" href="style/style.css">-->
+    <link rel="stylesheet" href="style/mob_menu.css">
     <link rel="stylesheet" href="style/preproc.css">
     <link rel="stylesheet" href="style/media.css">
+
 
 
 </head>
@@ -21,30 +23,31 @@
 <header>
 
     <div class="container">
-        <a href="#" class="logo">
+        <a href="#" class="logo hover-target">
             <img src="img/Logo.svg" alt="logo">
         </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+        <div class="nav">
+        <nav class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="#" class="hover-target">Home</a>
                 </li>
-                <li>
-                    <a href="#">Shop</a>
+                <li class="nav__list-item">
+                    <a href="#" class="hover-target">Shop</a>
                 </li>
-                <li class="drop">
-                    <a href="#">Plant Care</a>
+                <li class="drop nav__list-item">
+                    <a href="#" class="hover-target">Plant Care</a>
                     <ul class="dropdown">
-                        <li>
+                        <li class="nav__list-item">
                             <a href="#">Drainage</a>
                         </li>
-                        <li>
+                        <li class="nav__list-item">
                             <a href="#">Fungicides</a>
                         </li>
-                        <li>
+                        <li class="nav__list-item">
                             <a href="#">Fertilizer</a>
                         </li>
-                        <li class="drop_2">
+                        <li class="drop_2 nav__list-item">
                             <a href="#">Priming
                                 <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.14228 0.945805C0.909014 0.730097 0.908201 0.379612 1.14046 0.162973C1.35161 -0.0339699 1.68269 -0.0524979 1.9164 0.107825L1.98337 0.161288L6.79132 4.60737C7.00401 4.80406 7.02336 5.11265 6.84935 5.32969L6.79135 5.39186L1.9834 9.83868C1.75016 10.0544 1.37278 10.0537 1.1405 9.83706C0.929333 9.64013 0.910782 9.33257 1.08439 9.1162L1.14224 9.05423L5.52584 4.99941L1.14228 0.945805Z" fill="black"/>
@@ -75,15 +78,64 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">Blogs</a>
+                <li class="nav__list-item">
+                    <a href="#" class="hover-target">Blogs</a>
                 </li>
             </ul>
         </nav>
+            </div>
+        <div class="nav-but-wrap" style="background-color:#1f2029">
+            <div class="menu-icon hover-target">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>
+        </div>
         <a href="#"  class="login" > <img src="img/Logout.svg"  width="20" height="20" alt="Logout" style="margin-right: 4px;">Login
         </a>
     </div>
 </header>
+<!--<header >-->
+<!--    <div class="container">-->
+<!--        <div class="logo-wrap">-->
+<!--            <a href="#" class="hover-target"><span>your</span>logo</a>-->
+<!--        </div>-->
+<!--        <div class="nav-but-wrap">-->
+<!--            <div class="menu-icon hover-target">-->
+<!--                <span class="menu-icon__line menu-icon__line-left"></span>-->
+<!--                <span class="menu-icon__line"></span>-->
+<!--                <span class="menu-icon__line menu-icon__line-right"></span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
+
+<!--<div class="nav">-->
+<!--    <div class="nav__content">-->
+<!--        <ul class="nav__list">-->
+<!--            <li class="nav__list-item active-nav"><a href="#" class="hover-target">home</a></li>-->
+<!--            <li class="nav__list-item"><a href="#" class="hover-target">studio</a></li>-->
+<!--            <li class="nav__list-item"><a href="#" class="hover-target">news</a></li>-->
+<!--            <li class="nav__list-item"><a href="#" class="hover-target">contact</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="section full-height over-hide">-->
+<!--    <div class="switch-wrap">-->
+<!--        <h1>overlay menu</h1>-->
+<!--        <div id="switch" class="hover-target">-->
+<!--            <div id="circle"></div>-->
+<!--        </div>-->
+<!--        <p><span>dark</span> - <span>light</span></p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class='cursor' id="cursor"></div>-->
+<!--<div class='cursor2' id="cursor2"></div>-->
+<!--<div class='cursor3' id="cursor3"></div>-->
+
+
 <main>
     <section class="banner">
     <div class="container_banner">

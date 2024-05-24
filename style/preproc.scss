@@ -56,6 +56,8 @@ $main_font:'cera_proregular';
   padding: 0;
   margin: 0;
 }
+
+@media screen and (min-width: 581px){
 input{
   border: 1px solid #EAEAEA;
   border-radius: 5px;
@@ -229,107 +231,119 @@ header{
   bottom:10px;
 }
 li {
-  &li{
-  &:after{
-    display: none;
-  }
-  &:last-of-type{
-   &:after {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 20px;
-    top: -4px;
-    transition: 1s;
-  }
-  &:last-of-type{
-     &:hover svg path{
-    fill: white;
-  }
-  &:hover{
-    &:after{
-    display: none;
-    background-color: transparent;
-  }
-  &:hover a{
-    color:white;
-  }
-}
-
-
-.dropdown_2{
-  display: block;
-  position: absolute;
-  background-color:#EDF6EE;
-  top: -50px;
-  left: 180px;
-  height: 80px;
-  opacity: 0;
-  font-family: 'cera_proregular';
-  font-size: 16px;
-  color: #3d3d3d;
-  width: 178px;
-li {
-  &:after{
-    display: none;
-  }
-  &:last-of-type{
-  &:after{
-    display: none;
-}
-  &:hover{
-   &:after{
-    display: none;
-  }
-  &:hover a{
-    color:white;
-  }
-  &:hover {
-    background-color: #EDF6EE;
-  }
-}
-
-
-
-.drop {
-  position: relative;
-}
-  &:hover .dropdown{
-    opacity: 1;
-    height: auto;
-    transition: 0.5s;
-  }
-
-
-
-  .drop_2 {
-    position: relative;}
-    a {
-      padding-right: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  &li {
+    &:after {
+      display: none;
     }
-    &:hover svg {
-      animation: priming 1s infinite;
-    }
-    &:hover .dropdown_2{
-      opacity: 1;
-      height: auto;
-      transition: 0.3s;
-    }
-  }
 
-  @keyframes priming {
-    0% {
-      transform: rotate(90deg)
-    }
-    100% {
-      transform: rotate(360deg)
-    }
-  }
+    &:last-of-type {
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 20px;
+        top: -4px;
+        transition: 1s;
+      }
+
+      &:last-of-type {
+        &:hover svg path {
+          fill: white;
+        }
+
+        &:hover {
+          &:after {
+            display: none;
+            background-color: transparent;
+          }
+
+          &:hover a {
+            color: white;
+          }
+        }
+
+
+        .dropdown_2 {
+          display: block;
+          position: absolute;
+          background-color: #EDF6EE;
+          top: -50px;
+          left: 180px;
+          height: 80px;
+          opacity: 0;
+          font-family: 'cera_proregular';
+          font-size: 16px;
+          color: #3d3d3d;
+          width: 178px;
+
+          li {
+            &:after {
+              display: none;
+            }
+
+            &:last-of-type {
+              &:after {
+                display: none;
+              }
+
+              &:hover {
+                &:after {
+                  display: none;
+                }
+
+                &:hover a {
+                  color: white;
+                }
+
+                &:hover {
+                  background-color: #EDF6EE;
+                }
+              }
+
+
+              .drop {
+                position: relative;
+              }
+
+              &:hover .dropdown {
+                opacity: 1;
+                height: auto;
+                transition: 0.5s;
+              }
+
+
+              .drop_2 {
+                position: relative;
+              }
+
+              a {
+                padding-right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              }
+
+              &:hover svg {
+                animation: priming 1s infinite;
+              }
+
+              &:hover .dropdown_2 {
+                opacity: 1;
+                height: auto;
+                transition: 0.3s;
+              }
+            }
+
+            @keyframes priming {
+              0% {
+                transform: rotate(90deg)
+              }
+              100% {
+                transform: rotate(360deg)
+              }
+            }
 
 
 

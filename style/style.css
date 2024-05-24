@@ -58,7 +58,7 @@ p{
     background-color: #46a358;
     padding: 11px 0 9px;
     font-family: 'cera_probold';
-animation: example 4s infinite;
+    animation: example 4s infinite;
 }
 
 @keyframes example {
@@ -99,7 +99,7 @@ animation: example 4s infinite;
 }
 .flex_right{
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
     list-style: none;
 
 }
@@ -440,6 +440,7 @@ h3{
     font-family: 'cera_promedium';
     display: inline-block;
     padding-top: 9px;
+    padding-bottom:50px;
 }
 
 .read_more:hover{
@@ -448,19 +449,24 @@ h3{
 .read_more:hover svg path{
     fill: #46A358;
 }
+
 .container_faq{
     max-width: 1200px;
     margin: auto;
+    padding-top:20px
 }
-.ui-accordion .ui-accordion-header{
+.ui-accordion .ui-accordion-header {
     border-radius: 22px;
     padding: 20px 16px;
     background-color: transparent;
     border: solid 2px #46A358;
-    &.ul-state-active{
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active{
         background-color: antiquewhite;
         border-bottom: none;
         border-radius: 22px 22px 0 0 ;
+    color: black;
     }
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
@@ -473,9 +479,26 @@ h3{
     border-radius: 0 0 22px 22px;
     overflow: auto;
     border-top: none;
-
 }
 
+ .ui-icon {
+    width:16px;
+    height:16px;
+    position:absolute;
+    right:20px;
+    background-image: none;
+    background-position: 0;
+    text-indent: 0;
+     transform: rotate(180deg)
+}
+.ui-state-active .ui-icon, .ui-button:active .ui-icon:hover{
+
+    background-image:none;
+}
+
+.ui-icon:after {
+  background-image: url("../img/down.svg");
+}
 
 .menu_last{
     display: flex;
@@ -566,11 +589,7 @@ h3{
 .gradient_menu .logo{
     margin-right: 0;
 }
-/*.gradient_menu span img{*/
-/*    max-width: 100%;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*}*/
+
 .account {
     display: flex;
     justify-content: space-between;
